@@ -17,7 +17,7 @@ function calcular(){
         document.getElementById("resultado").innerHTML="Año inválido";
         return;
     }        
-    const date = new Date(anio, mes, dia);
+    const date = new Date(anio, mes, (dia-2));
     var dia= date.toLocaleDateString('es-MX', {
         weekday: 'long',
     });
